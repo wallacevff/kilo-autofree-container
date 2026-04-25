@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  nginx:
+    image: nginx:alpine
+
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: ingress
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: ingress
+
+    configs:
+      - source: nginx-kilo-conf
+        target: /etc/nginx/conf.d/kilo.conf
+
+    volumes:
+      - ngix_certs:/etc/nginx/certs:ro
+
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+
+    networks:
+      - kilo_autofree_kilo_net
+
+networks:
+  kilo_autofree_kilo_net:
+    external: true
+
+configs:
+  nginx-kilo-conf:
+    external: true
+
+volumes:
+  ngix_certs:
+    external: true

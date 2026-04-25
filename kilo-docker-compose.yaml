@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  kilo:
+    image: wallacevff/kilo-autofree:latest
+    build: .
+    ports:
+      - target: 4096
+        published: 4096
+        protocol: tcp
+        mode: ingress
+      - target: 1455
+        published: 1455
+        protocol: tcp
+        mode: ingress
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      restart_policy:
+        condition: on-failure
+    networks:
+      kilo_net:
+        ipv4_address: 10.0.4.3
+    volumes:
+      - /home/wallacevff/Dev:/root/workspace:rw
+      - data:/root/.local/share
+      - container-var:/var
+      - container-usr:/usr
+      - container-etc:/etc
+      - container-root:/root
+      - container-opt:/opt
+    environment:
+      - SHELL=/bin/bash
+    tty: true
+    stdin_open: true
+    privileged: true
+networks:
+  kilo_net:
+   external: true
+volumes:
+  data:
+    driver: local
+  container-var: 
+    driver: local
+  container-usr: 
+    driver: local
+  container-etc: 
+    driver: local
+  container-root:
+    driver: local
+  container-opt:
+    driver: local
