@@ -63,6 +63,30 @@ O projeto já inclui certificados autoassinados na pasta `certs/`:
 
 **Para usar em produção**, substitua os certificados por ones válidos de uma CA confiável (Let's Encrypt, etc).
 
+### Instalando a CA em Sistemas Linux
+
+Para que os sistemas confiem nos certificados autoassinados incluídos neste projeto, você precisa instalar a Autoridade Certificadora (CA) no seu sistema operacional.
+
+#### No Fedora, RHEL, CentOS:
+
+```bash
+# Copie o certificado da CA para o diretório de confiança
+sudo cp certs/ca.crt /etc/pki/ca-trust/source/anchors/
+
+# Atualize o cache de certificados
+sudo update-ca-trust extract
+```
+
+#### No Debian, Ubuntu, Linux Mint:
+
+```bash
+# Copie o certificado da CA para o diretório de confiança
+sudo cp certs/ca.crt /usr/local/share/ca-certificates/kilocode-local.crt
+
+# Atualize o cache de certificados
+sudo update-ca-certificates
+```
+
 ### Opção 2: Gerar Novos Certificados
 
 ```bash
