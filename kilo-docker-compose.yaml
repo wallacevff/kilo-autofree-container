@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   kilo:
-    image: wallacevff/kilo-autofree:latest
+    image: wallacevff/kilo-autofree:1.0.5
     build: .
     ports:
       - target: 4096
