@@ -1,0 +1,154 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+# File Summary
+
+## Purpose
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+## File Format
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  a. A header with the file path (## File: path/to/file)
+  b. The full contents of the file in a code block
+
+## Usage Guidelines
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+## Notes
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+
+# Directory Structure
+```
+ca.crt
+ca.key
+ca.srl
+kilocode.local.crt
+kilocode.local.csr
+kilocode.local.key
+```
+
+# Files
+
+## File: ca.crt
+```
+-----BEGIN CERTIFICATE-----
+MIIFlTCCA32gAwIBAgIULrrz+/bbRwtNBx6q1iCmP7damsowDQYJKoZIhvcNAQEL
+BQAwWjELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlNQMRIwEAYDVQQHDAlTYW8gUGF1
+bG8xEDAOBgNVBAoMB0tpbG9PcmcxGDAWBgNVBAMMD0tpbG9PcmcgUm9vdCBDQTAe
+Fw0yNjA0MjQyMzEyMDZaFw0zNjA0MjEyMzEyMDZaMFoxCzAJBgNVBAYTAkJSMQsw
+CQYDVQQIDAJTUDESMBAGA1UEBwwJU2FvIFBhdWxvMRAwDgYDVQQKDAdLaWxvT3Jn
+MRgwFgYDVQQDDA9LaWxvT3JnIFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4IC
+DwAwggIKAoICAQCREML+q4roo9QEURkynJlWhB5B+RZGYpqoUnwyN9Rbzxdop9Vt
+VC019igHVVAreW9Urn/uajRIbtcxZ/mNoyVNfnLM4HWVkQyyy1zxZECAmx5Z41gW
+E5sBwuHAbu1UWiYe6rH3MRAmoecpu1daojDF8apn0xNpdu+NLra36ixScPJeVb0m
+0WnuFBa9MKdCrXXKA3cRqCRtCaxB3imUVzkLIUX96wI9z4+LPzU6Zd3hfuhnJOUQ
+SQI6s42dtxK6fBUiy2rqNXAmhyEezWFoV6t24vBK3h1aL3NEG8DUTsjrJqoTrGeU
+FoLyvUZINyX8nxqrGkl9MWE5rezoC8niDX8iwQfKHFgZ8I0HWGBCDjrRuWoV+1Gm
+MEmQhF1qyKoMggF3STqBgSpOVyaZp96sEsuOH4t2MUGezNc9/xyLy75zVhEY8RqL
+YJTyrWVfq+j9xruFX+fx1MlDNMDJtY5EX8HeFtNub5t0Je66bY9+aHe+gXVq6wGu
+F8DHcEd2UiuCrU1a/WiPH46J/UKP6a0D3Lu9igJPAzG6rPA33blZQPk4TEG60TJG
+sqkLJr8Z3H8UBfy8f647LZLHVv+ralvZ6HQQLhU1wyDJv0ro0L9Ly/yzPTUKFRZM
+Q0uLn3DbhswyVOq0DJy3E7HdsT4wmyS2ioHzIKwEiunVhPQ+WX2BPjFfsQIDAQAB
+o1MwUTAdBgNVHQ4EFgQUpeEv/gvcS56RfPEAH4h61o1JKcwwHwYDVR0jBBgwFoAU
+peEv/gvcS56RfPEAH4h61o1JKcwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0B
+AQsFAAOCAgEAEm+Iswbjxh7GNYMlGbei9vmE4Hloi6DopnwC6wzq+9utcJgdtPbv
+MjvNYI1aebWP41QygV5+Dmr+90TZtV5Bi2lkiokAkkN+O28m6e8diThND3M8m2TL
+WuqXlIwjuR/jA1uLrutXDMSstOyGfNb0dwmXtHzvHTxcCJHNX9xAfPWJ0ef1jw3L
+IeIHZkWshDDezVXe/FY/Yi4hnQ26L5rcaPYdlWjit50wvvZhEcCGD3pd9nswDAXy
+/3TtUOKdpBs7TmLyenGRbAtAHGsvOzkwnFNRgCcKK7pYK0WreMRStq0O+LJa+Vu4
+7Gm0nzJZvc3jdNHiVHCdvxg84cq5IjszQyslTrh0vG2+/Tt/QfPQnoWQY/EhdKiL
+f/xFHS63BPx3vE4m7jOeyggiTsuQMOLkdqNSdFqzvziS1Zx68pHC+t6n2ohxOWaL
+L2w7QN4Jja0ColCq5nLM72PTtC9crHc/EYR6mmtVEJGPUqg36VrpcTUVvwMUINAh
+jYY1P2tUAf6DzGDQd5XGOfv9Xf8cO16gGveohyEmv22GsIX0WmtlBjoGKw7li7k2
+lSVdPXGwbEcaBolz5EoiRr+buDr76qlXHSmAlp03f4J+8QdYTvBYQXmlUnQwBtuk
+mRv0iauAkVskq7q5FpGRrFD2c3PO6OEtywbqV7WkjYdDfut72TqaHRM=
+-----END CERTIFICATE-----
+```
+
+## File: ca.srl
+```
+14E95B699F8EF8F34B7A8F2BB2E6625B1C11B04E
+```
+
+## File: kilocode.local.crt
+```
+-----BEGIN CERTIFICATE-----
+MIIFpDCCA4ygAwIBAgIUFOlbaZ+O+PNLeo8rsuZiWxwRsE4wDQYJKoZIhvcNAQEL
+BQAwWjELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlNQMRIwEAYDVQQHDAlTYW8gUGF1
+bG8xEDAOBgNVBAoMB0tpbG9PcmcxGDAWBgNVBAMMD0tpbG9PcmcgUm9vdCBDQTAe
+Fw0yNjA0MjQyMzEyMDZaFw0zNjA0MjEyMzEyMDZaMFkxCzAJBgNVBAYTAkJSMQsw
+CQYDVQQIDAJTUDESMBAGA1UEBwwJU2FvIFBhdWxvMRAwDgYDVQQKDAdLaWxvT3Jn
+MRcwFQYDVQQDDA5raWxvY29kZS5sb2NhbDCCAiIwDQYJKoZIhvcNAQEBBQADggIP
+ADCCAgoCggIBALYJ/nux42a5/C7WK3mrokm6jznsIsepha3mc+WE6oLUQDaerusR
+6CtmNUzLEjAf2v3Q0WhRWDCf6nGVcyB8Ziign7QO5dae3v9LyHgPUc/dKOxY6fn/
+Pt8DkKzYZubfBtCquY38cnomnQ4FKUzLqKT0QiAgROoo/pkvdlYWGtrXsMpmlbrk
+dGTGCA09ibeT2F6lHS8/HJyJsZFegCOg7lIod6UwM80bRXOoYksvSsjcnD4NYR38
+hY1Tqxwvm50U4gUnfVbltZEQtJ08Ecgy2c/wag+iGxk3ddaJwzodG96NlQCNv36v
+gOsk81t2obWWdx7qOuyxlcZmXVUrOY3iMXafmDAUjBzxHYdBuCdySMOSrn9bAarf
+qPJJSJN0QR5wH1+tNiHh68KKZggKjlpwN99xmJl4cfCOcK/Dg1tPjBlcegYPaLxk
+annlJCoBoxuZ3gxT74/4+k7/ZZ0jt+AphNstUP8hIH1yGFe+h+AzY/5is6NS5jur
+uvhp57A5noTY0i/SqTz4KhW+H1A362XCYHLp5uOcVmBlBCOZv60dScJN9NnmzHLU
+ISmKIxajiGRtyzkVOyWG/ZQWtvKne/fstSWGoAq7r5cnRKJPz+TM1eXXDHOmlki6
+kRFV7uOyac70BNDB3dERS8pSvbuc7nZQEavJBNm9TBK1ODkI/kuI6ujJAgMBAAGj
+YzBhMB8GA1UdEQQYMBaCDmtpbG9jb2RlLmxvY2FshwR/AAABMB0GA1UdDgQWBBQZ
+z6zGaenGQTU9RVad4/AWqqR5jTAfBgNVHSMEGDAWgBSl4S/+C9xLnpF88QAfiHrW
+jUkpzDANBgkqhkiG9w0BAQsFAAOCAgEAcnMDxMAG2Ydm80clf4KMf827MEPRQUCv
+Ew5EJBhNIO4FlI443jmAbNtckCXJFpMLC2Jfx+kdt5bQxPwtoaD7AietP6EcQrIk
+r5Aw1/57AXDapcP5iIDCtvjNeAvsWY9pBYNYC5AGO5SYZjO2QGhDbmWjlxb2L3iY
+sqDBsQ+8O4gzDq5xlap2cmf7+ssDfKKglo+1+Eke/RBdfbZgbM0gAr9lIRut2+BI
+C071mRDLQZ8+Kc1g8WkI+O9cdEZui6ShdPQ2P1t9SXxwZl9waipdzIykv0vxlGVn
+fTl2PH2jYYRkl6f9OWw1dTlP9QIvw80slohdmdtlBzHHvA1BjGino/t4m6j1L32x
+lTL7/qtDwgjPJEN1TBtqLjhOmzuFrcUFU4wnTY677ITZ7tfOQ1WtHHNAhqTjm7Cn
+PFoW+LkrFvTAQaZadQK3EFfdGBPFlX/yWaskT48qzwXFMaaT9NCY09/9IZoXAw44
+K74D1ADzV+2svTBQvf8djqAi3LgM1YtqbqFPVUtE3tKzHXSJQ+VRd0DHZV4YSTa1
+jd/abFiPTrGT3M4s/DsXz8JcNpThP9CyeSg5Lmukt5x8kEjS/GrveFVvHGaFJ+xw
+QO7rFhPHFIYcPNhqnkmD8su7DD7X7h8HcRDU4M0OcVf2cAB7Ym+Mj16oBawE17O7
+YvI1riiN43Q=
+-----END CERTIFICATE-----
+```
+
+## File: kilocode.local.csr
+```
+-----BEGIN CERTIFICATE REQUEST-----
+MIIEnjCCAoYCAQAwWTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlNQMRIwEAYDVQQH
+DAlTYW8gUGF1bG8xEDAOBgNVBAoMB0tpbG9PcmcxFzAVBgNVBAMMDmtpbG9jb2Rl
+LmxvY2FsMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtgn+e7HjZrn8
+LtYreauiSbqPOewix6mFreZz5YTqgtRANp6u6xHoK2Y1TMsSMB/a/dDRaFFYMJ/q
+cZVzIHxmKKCftA7l1p7e/0vIeA9Rz90o7Fjp+f8+3wOQrNhm5t8G0Kq5jfxyeiad
+DgUpTMuopPRCICBE6ij+mS92VhYa2tewymaVuuR0ZMYIDT2Jt5PYXqUdLz8cnImx
+kV6AI6DuUih3pTAzzRtFc6hiSy9KyNycPg1hHfyFjVOrHC+bnRTiBSd9VuW1kRC0
+nTwRyDLZz/BqD6IbGTd11onDOh0b3o2VAI2/fq+A6yTzW3ahtZZ3Huo67LGVxmZd
+VSs5jeIxdp+YMBSMHPEdh0G4J3JIw5Kuf1sBqt+o8klIk3RBHnAfX602IeHrwopm
+CAqOWnA333GYmXhx8I5wr8ODW0+MGVx6Bg9ovGRqeeUkKgGjG5neDFPvj/j6Tv9l
+nSO34CmE2y1Q/yEgfXIYV76H4DNj/mKzo1LmO6u6+GnnsDmehNjSL9KpPPgqFb4f
+UDfrZcJgcunm45xWYGUEI5m/rR1Jwk302ebMctQhKYojFqOIZG3LORU7JYb9lBa2
+8qd79+y1JYagCruvlydEok/P5MzV5dcMc6aWSLqREVXu47JpzvQE0MHd0RFLylK9
+u5zudlARq8kE2b1MErU4OQj+S4jq6MkCAwEAAaAAMA0GCSqGSIb3DQEBCwUAA4IC
+AQBe9o8eFujj46AsTfi4rX7GdPLGOGvjAxLV2lufW8yI3jSkMULU5GzGae6Q/XBf
+9XSMO7CxUZDF5jtYbQVodC75kwOeKvBWK6fne1pyJa3fyy1nBIzOhDvuiRqirI+3
++ZIHTsSLTAeaXldUwGv/1CmipvzKUWqndv8WbjMGr26xkeczea04lt0nQzjvDiJj
+7EuQzSBKkjdv63p8ksk83+QKtlc14HN7yA5jk0r1XoFRJv09Qrn7PSk3a1sAo6lh
+/fJz3WDP0M4t+D6v+tyRaJRXMvG0bM/MA1Senpd+No34Pgt/7WMK7ZWoqJbc+dv7
+MrhLiR2B8DoYynZGDuuGUb/uvJDMoEVvbX9Y0jjBUnTRU6elIA2eZ01N5V0m7OhM
+4GJb6nz67I/1kUFaMwmzza3OvK5caTbH0KjhawH5a96Pp6lvXfWKtXfW/1rnFZco
+TCcpq0vZbBphsahEaCea1Hd8cQPERiArrJTqMTkrSSJw8Q6Jh0dtxBTghehYHftA
+P7lRKDZJkBKXcFE/CC30m8soJtwh7Gat3fisY6isomibBtBoLKwhf40lQLBomp/s
+Tw55Vi0r0cb+Ez4KZ4VKv0eaV4g5rS1MQqsJYrlD6A8XCT3f5z3t4sF1HXT1q2Ej
+ZMZFhD/UU0kZhdJrNyuU9TaqMj3Jp/MLZcK4m/eiPECLsg==
+-----END CERTIFICATE REQUEST-----
+```

@@ -28,10 +28,10 @@ services:
           - node.role == manager
 
     networks:
-      - kilo_autofree_kilo_net
+      - kilo_net
 
 networks:
-  kilo_autofree_kilo_net:
+  kilo_net:
     external: true
 
 configs:
