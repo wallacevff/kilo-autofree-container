@@ -1,7 +1,7 @@
 FROM node:22
 
 # 🔧 Instala só o necessário
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get upgrade && apt-get install -y \
     bash \
     curl \
     git \
@@ -39,9 +39,12 @@ RUN npm install -g @kilocode/cli
 # 📁 Workspace
 WORKDIR /root/workspace
 COPY .bashrc /root/.bashrc
+COPY kilo-csp-proxy.js /usr/local/bin/kilo-csp-proxy.js
+COPY kilo-entrypoint.sh /usr/local/bin/kilo-entrypoint.sh
+RUN chmod +x /usr/local/bin/kilo-entrypoint.sh
 RUN ln -s /usr/local/bin/kilo /bin/kilo
 # 🌐 Porta
 EXPOSE 4096
 
 # 🚀 Start
-ENTRYPOINT ["/usr/local/bin/kilo", "serve", "--hostname", "0.0.0.0", "--port", "4096", "--cors", "*"]
+ENTRYPOINT ["/usr/local/bin/kilo-entrypoint.sh"]

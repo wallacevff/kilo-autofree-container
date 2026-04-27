@@ -29,6 +29,27 @@ docker-compose -f kilo-docker-compose.yaml up -d
 
 O Kilo estará disponível em `http://localhost:4096`
 
+### Rebuild apos ajuste de CSP
+
+O Kilo 7.2.25 entrega um script inline de preload do tema, mas o CSP padrao
+nao inclui o hash desse script. A imagem inicia o Kilo em uma porta interna e
+expoe a porta 4096 por um proxy local que reescreve somente o header
+`Content-Security-Policy`.
+
+Depois de alterar a imagem, reconstrua e suba novamente:
+
+```bash
+docker compose -f kilo-docker-compose.yaml build --no-cache
+docker compose -f kilo-docker-compose.yaml up -d
+```
+
+No Swarm:
+
+```bash
+docker build -t wallacevff/kilo-autofree:latest -f Kilo.Dockerfile .
+docker stack deploy -c kilo-docker-compose.yaml kilo
+```
+
 ### Deploy com Docker Swarm (Com Nginx Opcional)
 
 ✅ **Recomendado para produção**

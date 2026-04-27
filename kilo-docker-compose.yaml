@@ -3,7 +3,9 @@ version: "3.9"
 services:
   kilo:
     image: wallacevff/kilo-autofree:latest
-    build: .
+    build:
+      context: .
+      dockerfile: Kilo.Dockerfile
     ports:
       - target: 4096
         published: 4096
