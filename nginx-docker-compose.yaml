@@ -14,12 +14,8 @@ services:
         protocol: tcp
         mode: ingress
 
-    configs:
-      - source: nginx-kilo-conf
-        target: /etc/nginx/conf.d/kilo.conf
-
     volumes:
-      - ngix_certs:/etc/nginx/certs:ro
+      - nginx_config:/etc/nginx:ro
 
     deploy:
       replicas: 1
@@ -34,10 +30,7 @@ networks:
   kilo_net:
     external: true
 
-configs:
-  nginx-kilo-conf:
-    external: true
 
 volumes:
-  ngix_certs:
+  nginx_config:
     external: true
