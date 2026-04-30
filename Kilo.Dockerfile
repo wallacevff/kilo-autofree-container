@@ -32,6 +32,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 # 🔥 Shell correto pro Kilo
 ENV SHELL=/bin/bash
+ENV HOME=/workspace
+ENV BASH_ENV=/workspace/.bashrc
 
 # 📦 Instala Kilo
 RUN npm install -g @kilocode/cli
@@ -39,18 +41,21 @@ RUN npm install -g @kilocode/cli
 # 🔐 Permissões e sudo
 RUN usermod -aG root node \
     && usermod -aG sudo node \
+    && usermod -d /workspace node \
     && echo "node ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/node \
     && chmod 0440 /etc/sudoers.d/node
 
 # 📁 Workspace
+COPY .bashrc /workspace/.bashrc
 COPY .bashrc /root/.bashrc
+COPY .bashrc /home/node/.bashrc
 COPY kilo-csp-proxy.js /usr/local/bin/kilo-csp-proxy.js
 COPY kilo-entrypoint.sh /usr/local/bin/kilo-entrypoint.sh
 
 RUN chmod +x /usr/local/bin/kilo-entrypoint.sh \
     && ln -s /usr/local/bin/kilo /bin/kilo \
     && mkdir -p /workspace \
-    && chown node:node /workspace
+    && chown -R node:node /workspace /home/node/.bashrc
 
 USER node
 

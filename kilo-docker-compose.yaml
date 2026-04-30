@@ -2,10 +2,7 @@ version: "3.9"
 
 services:
   kilo:
-    image: wallacevff/kilo-autofree:latest
-    build:
-      context: .
-      dockerfile: Kilo.Dockerfile
+    image: wallacevff/kilo-autofree:1.0.21
     ports:
       - target: 4096
         published: 4096
@@ -23,21 +20,18 @@ services:
       restart_policy:
         condition: on-failure
     networks:
-      kilo_net:
-        ipv4_address: 10.0.4.3
+      - kilo_net
+
     volumes:
-      - /home/wallacevff/Dev:/root/workspace:rw
-      - data:/root/.local/share
+      - /mnt/host/d/Dev:/workspace/Dev
       - container-var:/var
       - container-usr:/usr
       - container-etc:/etc
-      - container-root:/root
+      - container-root:/workspace
       - container-opt:/opt
     environment:
       - SHELL=/bin/bash
-    tty: true
-    stdin_open: true
-    privileged: true
+      - HOME=/workspace
 networks:
   kilo_net:
    external: true
