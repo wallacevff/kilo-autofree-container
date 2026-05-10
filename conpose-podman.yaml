@@ -1,0 +1,30 @@
+services:
+  kilo:
+    image: docker.io/wallacevff/kilo-autofree:1.0.21
+    container_name: kilo
+    user: node
+
+    ports:
+      - "4096:4096/tcp"
+
+    restart: on-failure
+
+    networks:
+      - kilo_net
+
+    volumes:
+      - /home/wallacevff/Dev:/workspace/Dev:rw
+      - data:/workspace
+
+    environment:
+      SHELL: /bin/bash
+
+    security_opt:
+      - no-new-privileges:false
+
+networks:
+  kilo_net:
+    external: true
+
+volumes:
+  data:
