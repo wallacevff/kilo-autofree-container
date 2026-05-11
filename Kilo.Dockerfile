@@ -28,6 +28,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     libgcc-s1 \
     libstdc++6 \
     sudo \
+ && apt-get install -y --only-upgrade libde265-0 \
+ && apt-get install -y --only-upgrade libgnutls30 gnutls-bin \
  && rm -rf /var/lib/apt/lists/*
 
 # 🔥 Shell correto pro Kilo
