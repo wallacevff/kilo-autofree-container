@@ -1,4 +1,4 @@
-FROM node:22
+FROM node:24
 
 # 🔧 Instala pacotes + sudo
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
@@ -37,8 +37,8 @@ ENV SHELL=/bin/bash
 ENV HOME=/workspace
 ENV BASH_ENV=/workspace/.bashrc
 
-# 📦 Instala Kilo
-RUN npm install -g @kilocode/cli
+# 📦 Instala Kilo (fixa versão com UI web)
+RUN npm install -g @kilocode/cli@7.2.31
 
 # 🔐 Permissões e sudo
 RUN usermod -aG root node \
