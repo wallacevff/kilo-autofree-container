@@ -1,6 +1,6 @@
 services:
   kilo:
-    image: docker.io/wallacevff/kilo-autofree:1.0.21
+    image: docker.io/wallacevff/kilo-autofree:latest
     container_name: kilo
     user: node
 
